@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import "./index.scss";
 
-const Button = () => {
+const Button = ({
+  children,
+  onClick,
+  variant = "default",
+  isActive = false,
+}) => {
   return (
-    <div>Button</div>
-  )
-}
+    <button
+      className={`button ${variant} ${isActive ? "active" : ""}`}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
+};
 
-export default Button
+export default Button;

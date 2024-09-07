@@ -1,0 +1,19 @@
+.categories {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 5px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+button {
+  flex-shrink: 0;
+  min-width: 100px;
+}

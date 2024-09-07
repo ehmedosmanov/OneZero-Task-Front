@@ -1,0 +1,34 @@
+.button {
+  padding: 9px 15px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Inter", system-ui;
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #000;
+
+  &.default {
+    background-color: #f7f7f7;
+    color: #676767;
+
+    &:hover {
+      background-color: #e0e0e0;
+      color: #333;
+    }
+  }
+
+  &.active {
+    background-color: #000;
+    color: #fff;
+    border-color: #000000;
+
+    &:hover {
+      background-color: #000000d2;
+      color: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+  }
+}

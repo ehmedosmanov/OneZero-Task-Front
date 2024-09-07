@@ -1,0 +1,37 @@
+.menu-grid-section {
+  padding: 10px 0;
+  .menu-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    max-width: 90%;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-grid-section {
+    .menu-products {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 10px;
+      max-width: 100%;
+      .product-item {
+        .product-heading {
+          height: 80px;
+
+          .product-price {
+            font-size: 12px;
+            padding: 2px 8px;
+          }
+        }
+
+        .product-text {
+          padding: 5px 7px;
+
+          p {
+            font-size: clamp(12px, 3vw, 10px);
+          }
+        }
+      }
+    }
+  }
+}

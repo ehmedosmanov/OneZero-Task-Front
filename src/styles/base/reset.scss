@@ -83,7 +83,6 @@ img {
   max-width: 100%;
 }
 
-
 body {
   line-height: 1;
 }
@@ -113,4 +112,12 @@ table {
 
 input {
   border-radius: 0;
+}
+
+.container {
+  padding: 0 32px;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
